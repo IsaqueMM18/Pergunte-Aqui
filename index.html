@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pergunte Aqui — dúvidas para os professores, sem medo</title>
+  <meta name="description" content="Envie dúvidas aos professores sem precisar se identificar e consulte as respostas publicadas no mural.">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Pergunte Aqui — página inicial">
+      <img src="assets/icons/logo.svg" alt="" width="40" height="40"><span>Pergunte Aqui</span>
+    </a>
+    <nav class="nav" aria-label="Principal" id="nav"></nav>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="footer">
+    <p><strong>Pergunte Aqui</strong> — um espaço para perguntar e aprender. Não pedimos nome, e-mail nem cadastro.</p>
+  </footer>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+  <dialog id="confirm" aria-labelledby="confirm-title">
+    <form method="dialog">
+      <h2 id="confirm-title"></h2><p></p>
+      <div class="actions"><button class="btn btn-ghost" value="cancel">Cancelar</button><button class="btn btn-primary" value="ok" data-ok>Confirmar</button></div>
+    </form>
+  </dialog>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

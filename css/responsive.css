@@ -1,0 +1,28 @@
+/* Mobile primeiro: aqui ficam os ajustes para telas maiores. */
+@media (min-width:600px){
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .filters{grid-template-columns:1fr 1fr}
+  .filters .grow{grid-column:1/-1}
+  .steps{grid-template-columns:repeat(3,1fr)}
+}
+@media (min-width:768px){
+  body{padding-bottom:0}
+  .topbar{padding:.7rem max(1rem,calc((100vw - 1080px)/2))}
+  .nav{position:static;display:flex;gap:.3rem;border:0;padding:0;background:none}
+  .nav a{flex-direction:row;gap:.45rem;padding:.5rem .95rem;font-size:.95rem;border-radius:999px}
+  .nav a:hover{background:var(--brand-50);color:var(--brand-d)}
+  .toasts{bottom:24px}
+  main{padding:2rem 1.5rem 3rem}
+  .hero{grid-template-columns:1.15fr .85fr;align-items:center;padding:3rem 2.6rem;gap:2rem}
+  .hero-art{min-height:280px}
+  .bub{font-size:1.15rem;padding:.9rem 1.3rem}
+  .bub.d{width:70px;height:70px}
+  .send-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:1.25rem;align-items:start}
+  .filters{grid-template-columns:2fr 1fr 1fr 1fr}
+  .filters .grow{grid-column:auto}
+  .recent{grid-template-columns:1fr 1fr}
+}
+@media (min-width:1024px){
+  .hero{padding:3.6rem 3.4rem}
+  .stat b{font-size:2.8rem}
+}
