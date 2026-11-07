@@ -3,8 +3,8 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm';
 
 export const CONFIG = {
-  SUPABASE_URL: 'COLE_AQUI_A_PROJECT_URL',          // ex.: https://abcdefgh.supabase.co
-  SUPABASE_KEY: 'COLE_AQUI_A_CHAVE_PUBLICA',        // anon key ou publishable key (sb_publishable_...)
+  SUPABASE_URL: 'https://hbmwepnoixyenyoyrpxs.supabase.co',
+  SUPABASE_KEY: 'sb_publishable_nW0cy3U3RPJsC2NjTAGi1A_vI7kdrBD',
   USE_EDGE_FUNCTION: false,                         // true após publicar a função submit-question
 };
 
